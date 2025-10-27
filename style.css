@@ -1,9 +1,8 @@
 body {
     font-family: "Rubik", sans-serif;
     background: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
     margin: 0;
 }
 
@@ -74,7 +73,6 @@ body {
 }
 
 
-//FIXME: Opravit později
 .post-menu {
     font-weight: bold;
     margin-left: 15px;

@@ -48,31 +48,34 @@ $posts = [
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <title>Instagram</title>
 </head>
 <body>
 
-<!--
 <aside class="sidebar">
     <h1 class="logo">FakeIG</h1>
     <nav>
-        <i class="ri-home-5-line">Home</i>
-        <i class="ri-search-line">Search</i>
-        <i class="ri-send-plane-line">Messages</i>
-        <i class="ri-heart-line">Notifications</i>
-        <i class="ri-add-box-line">Create</i>
-        <img src="https://i.pinimg.com/736x/bf/bb/d1/bfbbd1bd4de78b81c7bf0e3d8a7e9ef5.jpg" alt="Profil"
-             class="profile-img"> <span>Profile</span>
+        <div class="sidebar-icons"><i class="ri-home-5-line"><span class="nav-label">Home</span></i></div>
+        <div class="sidebar-icons"><i class="ri-search-line"><span class="nav-label">Search</span></i></div>
+        <div class="sidebar-icons"><i class="ri-send-plane-line"><span class="nav-label">Messages</span></i></div>
+        <div class="sidebar-icons"><i class="ri-heart-line"><span class="nav-label">Notifications</span></i></div>
+        <div class="sidebar-icons"><i class="ri-add-box-line"><span class="nav-label">Create</span></i></div>
+        <div class="sidebar-icons"><img src="https://i.pinimg.com/736x/bf/bb/d1/bfbbd1bd4de78b81c7bf0e3d8a7e9ef5.jpg" alt="Profil" class="profile-img"> <span class="nav-label">Profile</span></div>
     </nav>
 </aside>
--->
 
 
 <div class="feed">
     <?php foreach ($posts as $post): ?>
         <div class="post">
             <div class="post-header">
-                <img src="<?php echo $post['avatar']; ?>" alt="avatar" class="avatar">
+                <div class="user-post-info">
+                    <div>
+                        <img src="<?php echo $post['avatar']; ?>" alt="avatar" class="avatar">
+                    </div>
+                </div>
                 <span class="username"><?php echo $post['user']; ?> </span>
                 <span class="post-time">• <?php echo $post['post time']; ?></span>
                 <span class="post-menu">...</span>
