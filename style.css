@@ -1,0 +1,159 @@
+body {
+    font-family: "Rubik", sans-serif;
+    background: #f0f0f0;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin: 0;
+}
+
+.sidebar {
+    width: 240px;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+    height: 100vh;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+
+.logo {
+    font-size: 33px;
+    margin-bottom: 20px;
+}
+
+.sidebar-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.profile-img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.feed {
+    padding-top: 40px;
+    width: 500px;
+}
+
+.post {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    margin-bottom: 40px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+.user-post-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.username-and-post-time {
+    display: flex;
+    flex-direction: row;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px;
+}
+
+.avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.username {
+    font-weight: bold;
+    color: #333;
+    margin-right: 10px;
+}
+
+.post-time {
+    display: flex;
+    color: #999;
+}
+
+
+/* Fix me */
+.post-menu {
+    font-weight: bold;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.post img.main {
+    width: 100%;
+    display: block;
+}
+
+.icons {
+    font-size: 27px;
+    margin-left: 10px;
+    margin-top: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+.post-actions {
+    margin: 10px 15px;
+    color: #444;
+}
+
+.text {
+    margin: 10px 15px;
+    color: #444;
+}
+
+.text-likes {
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.text strong {
+    color: #333;
+}
+
+.time {
+    color: #999;
+    font-size: 13px;
+    margin: 0 15px 15px;
+}
+
+/* Sidebar */
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-family: "Inter Display", "Inter";
+}
+
+/* ensure nav labels use Inter (won't affect icon font on the <i>) */
+nav .nav-label,
+nav span {
+    font-family: "Inter Display", "Inter", system-ui, sans-serif;
+    margin-left: 2px;
+}
+
+i {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 24px;
+}
