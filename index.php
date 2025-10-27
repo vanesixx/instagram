@@ -28,7 +28,7 @@ $posts = [
         'user' => 'skif',
         'avatar' => 'https://i.pinimg.com/736x/0d/2d/b9/0d2db9ec70bcc25255eb7e4e4f85b3f6.jpg',
         'post time' => '20h',
-        'image' => 'https://i.pinimg.com/736x/7b/5e/88/7b5e882617b47516bafcffb74d1976c5.jpg',
+        'image' => 'https://i.pinimg.com/736x/7b/5e/88/7b5e',
         'likes' => 369,
         'caption' => 'Beautiful poppy field',
         'comments' => [
@@ -48,23 +48,25 @@ $posts = [
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Instagram</title>
     <link rel="preconnect" href="https://rsms.me/">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    <title>Instagram</title>
 </head>
 <body>
+
 
 <aside class="sidebar">
     <h1 class="logo">FakeIG</h1>
     <nav>
-        <div class="sidebar-icons"><i class="ri-home-5-line"><span class="nav-label">Home</span></i></div>
-        <div class="sidebar-icons"><i class="ri-search-line"><span class="nav-label">Search</span></i></div>
-        <div class="sidebar-icons"><i class="ri-send-plane-line"><span class="nav-label">Messages</span></i></div>
-        <div class="sidebar-icons"><i class="ri-heart-line"><span class="nav-label">Notifications</span></i></div>
-        <div class="sidebar-icons"><i class="ri-add-box-line"><span class="nav-label">Create</span></i></div>
-        <div class="sidebar-icons"><img src="https://i.pinimg.com/736x/bf/bb/d1/bfbbd1bd4de78b81c7bf0e3d8a7e9ef5.jpg" alt="Profil" class="profile-img"> <span class="nav-label">Profile</span></div>
+        <div class="sidebar-icons"><i class="ri-home-5-line"></i><span class="nav-label">Home</span></div>
+        <div class="sidebar-icons"><i class="ri-search-line"></i><span class="nav-label">Search</span></div>
+        <div class="sidebar-icons"><i class="ri-send-plane-line"></i><span class="nav-label">Messages</span></div>
+        <div class="sidebar-icons"><i class="ri-heart-line"></i><span class="nav-label">Notifications</span></div>
+        <div class="sidebar-icons"><i class="ri-add-box-line"></i><span class="nav-label">Create</span></div>
+        <div class="sidebar-icons"><img src="https://i.pinimg.com/736x/bf/bb/d1/bfbbd1bd4de78b81c7bf0e3d8a7e9ef5.jpg" alt="Profil" class="profile-img"><span class="nav-label">Profile</span></div>
     </nav>
 </aside>
+
 
 
 <div class="feed">
@@ -75,9 +77,11 @@ $posts = [
                     <div>
                         <img src="<?php echo $post['avatar']; ?>" alt="avatar" class="avatar">
                     </div>
+                    <div class="username-and-post-time">
+                        <span class="username"><?php echo $post['user']; ?> </span>
+                        <span class="post-time">• <?php echo $post['post time']; ?></span>
+                    </div>
                 </div>
-                <span class="username"><?php echo $post['user']; ?> </span>
-                <span class="post-time">• <?php echo $post['post time']; ?></span>
                 <span class="post-menu">...</span>
             </div>
 
